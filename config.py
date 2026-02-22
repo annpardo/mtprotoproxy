@@ -1,10 +1,10 @@
 import os
 
 # 端口，默认 443
-PORT = int(os.environ.get("PORT", 443))
+PORT = int(os.environ.get("PORT", ))
 
 # 用户配置：环境变量 USERS 格式为 "name:secret;name2:secret2"
-users_env = os.environ.get("USERS", "tg:00000000000000000000000000000001")
+users_env = os.environ.get("USERS", "")
 USERS = {}
 for item in users_env.split(";"):
     if ":" in item:
@@ -19,7 +19,7 @@ MODES = {
 }
 
 # TLS 域名，默认 None
-TLS_DOMAIN = os.environ.get("TLS_DOMAIN", None)
+TLS_DOMAIN = os.environ.get("TLS_DOMAIN", )
 
 # 广告标签，必须是字符串，默认空字符串，避免 None 报错
 AD_TAG = os.environ.get("AD_TAG", "")
