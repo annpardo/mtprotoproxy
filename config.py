@@ -18,4 +18,4 @@ MODES = {
 TLS_DOMAIN = os.environ.get("TLS_DOMAIN", None)
 
 # 广告标签，可选
-AD_TAG = os.environ.get("AD_TAG", None)
+AD_TAG = os.environ.get("AD_TAG", )
