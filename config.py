@@ -20,4 +20,4 @@ MODES = {
 
 # The domain for TLS mode, bad clients are proxied there
 # Use random existing domain, proxy checks it on start
-TLS_DOMAIN = "www.google.com"
+TLS_DOMAIN = "cloudflare.com"
