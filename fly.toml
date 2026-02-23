@@ -1,23 +1,18 @@
-# fly.toml app configuration file generated for mtprotoproxy-xorddq on 2026-02-23T12:33:20Z
-#
-# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
-#
+app = "mtprotoproxy-o2ydfw"
+primary_region = "sin"
 
-app = 'mtprotoproxy-xorddq'
-primary_region = 'ams'
+[[services]]
+internal_port = 443
+protocol = "tcp"
 
-[build]
+  [[services.ports]]
+  port = 443
 
-[http_service]
-  internal_port = 443
-  force_https = true
-  auto_stop_machines = 'stop'
-  auto_start_machines = true
-  min_machines_running = 0
-  processes = ['app']
+  [[services.tcp_checks]]
+  interval = "10s"
+  timeout = "2s"
 
 [[vm]]
-  memory = '1gb'
-  cpu_kind = 'shared'
-  cpus = 1
-  memory_mb = 256
+cpu_kind = "shared"
+cpus = 1
+memory_mb = 256
