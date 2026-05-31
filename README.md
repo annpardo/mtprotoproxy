@@ -49,6 +49,10 @@ docker-compose up -d
 docker-compose logs
 ```
 
+安装演示：
+
+![安装演示](https://camo.githubusercontent.com/a6cc16b9bf53c16579b45c8d29d270a63e9d70fd698cfd0fb4dcb25295ecf022/68747470733a2f2f616c6578626572732e636f6d2f6d7470726f746f70726f78792f696e7374616c6c5f64656d6f5f76322e676966)
+
 ## 不使用 Docker 运行
 
 也可以直接运行：
