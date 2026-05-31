@@ -1,5 +1,7 @@
 # Async MTProto Proxy #
 
+中文说明：[README.zh-CN.md](README.zh-CN.md)
+
 Fast and simple to setup MTProto proxy written in Python.
 
 ## Starting Up ##
