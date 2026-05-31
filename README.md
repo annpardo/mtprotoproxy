@@ -1,5 +1,7 @@
 # Async MTProto Proxy 中文说明
 
+English: [README.en.md](README.en.md)
+
 这是一个使用 Python 编写的异步 MTProto Proxy，部署简单，适合用于搭建 Telegram MTProxy。
 
 ## 功能说明
